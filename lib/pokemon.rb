@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Pokemon
   attr_reader :id, :name, :type, :hp, :db
   @@all = []
@@ -29,3 +30,17 @@ class Pokemon
   end
 
 end	
+=======
+class Pokemon
+  attr_accessor :name, :type, :db 
+  attr_reader :id
+  
+  def self.initialize(id=nil, name, type, db)
+    @@id = id
+    @@name = name
+    @@type = type
+    @@db =db 
+  end 
+  
+end
+>>>>>>> a2d010a1370eb7e10589c84a715e03cb907484e8
